@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/math-base-special-aversin",
+  "version": "0.0.0",
+  "description": "Compute the inverse versed sine.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-base-special-aversin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "aversin",
+    "aversine",
+    "arcversin",
+    "arcversine",
+    "versed sine",
+    "aversinus",
+    "arcvers",
+    "avers",
+    "aver",
+    "arc",
+    "versed",
+    "sine",
+    "sin",
+    "acos",
+    "trig",
+    "trigonometry",
+    "radians",
+    "angle"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
