@@ -30,10 +30,14 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 
 <!-- <equation class="equation" label="eq:arcversine" align="center" raw="\operatorname{aversin}(\theta) = \arccos(1-\theta)" alt="Inverse versed sine."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{aversin}(\theta) = \arccos(1-\theta)" data-equation="eq:arcversine">
+```math
+\operatorname{aversin}(\theta) = \arccos(1-\theta)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{aversin}(\theta) = \arccos(1-\theta)" data-equation="eq:arcversine">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/aversin/docs/img/equation_arcversine.svg" alt="Inverse versed sine.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,14 +45,30 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-aversin
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@deno/mod.js';
+var aversin = require( '@stdlib/math-base-special-aversin' );
 ```
 
 #### aversin( x )
@@ -90,8 +110,8 @@ v = aversin( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@deno/mod.js';
+var linspace = require( '@stdlib/array-base-linspace' );
+var aversin = require( '@stdlib/math-base-special-aversin' );
 
 var x = linspace( 0.0, 2.0, 100 );
 
@@ -129,7 +149,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -173,7 +193,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -193,9 +213,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/avercos]: https://github.com/stdlib-js/math-base-special-avercos/tree/deno
+[@stdlib/math/base/special/avercos]: https://github.com/stdlib-js/math-base-special-avercos
 
-[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos/tree/deno
+[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos
 
 <!-- </related-links> -->
 
