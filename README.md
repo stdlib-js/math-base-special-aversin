@@ -56,30 +56,38 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-aversin
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var aversin = require( '@stdlib/math-base-special-aversin' );
+aversin = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var aversin = require( 'path/to/vendor/umd/math-base-special-aversin/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.aversin;
+})();
+</script>
 ```
 
 #### aversin( x )
@@ -120,9 +128,14 @@ v = aversin( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var aversin = require( '@stdlib/math-base-special-aversin' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = linspace( 0.0, 2.0, 100 );
 
@@ -130,6 +143,11 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( aversin( x[ i ] ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -224,9 +242,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/avercos]: https://github.com/stdlib-js/math-base-special-avercos
+[@stdlib/math/base/special/avercos]: https://github.com/stdlib-js/math-base-special-avercos/tree/umd
 
-[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos
+[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos/tree/umd
 
 <!-- </related-links> -->
 
