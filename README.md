@@ -63,7 +63,7 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 ## Usage
 
 ```javascript
-import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@esm/index.mjs';
+import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@v0.2.0-esm/index.mjs';
 ```
 
 #### aversin( x )
@@ -111,7 +111,7 @@ v = aversin( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@esm/index.mjs';
+import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@v0.2.0-esm/index.mjs';
 
 var x = linspace( 0.0, 2.0, 100 );
 
