@@ -63,6 +63,11 @@ The [inverse versed sine][inverse-versed-sine] is defined as
 ## Usage
 
 ```javascript
+import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-aversin/tags). For example,
+
+```javascript
 import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@v0.2.1-esm/index.mjs';
 ```
 
@@ -111,7 +116,7 @@ v = aversin( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@v0.2.1-esm/index.mjs';
+import aversin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-aversin@esm/index.mjs';
 
 var x = linspace( 0.0, 2.0, 100 );
 
